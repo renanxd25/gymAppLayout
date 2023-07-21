@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { register } from 'swiper/element/bundle';
 import { IonicSlides } from '@ionic/angular';
 import { DataService } from '../service/data.service';
@@ -11,9 +11,6 @@ register();
 })
 export class HomePage implements OnInit {
   swiperModules = [IonicSlides];
-  @ViewChild('swiper')
-  swiperRef: ElementRef | undefined;
-
 
   public dataList: any;
   public userName: any;
@@ -41,10 +38,5 @@ export class HomePage implements OnInit {
       this.keepTraining = this.dataList.keepTraining;
       this.levatamento = this.dataList.levatamento.toUpperCase();
       this.contents = this.dataList.contents.toUpperCase();
-  }
-
-  onSlideChange(event: any) {
-    console.log(this.swiperRef?.nativeElement.swiper.activeIndex);
-    console.log('event', event);
   }
 }

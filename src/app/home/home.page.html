@@ -64,7 +64,6 @@
     <p class="titleCardsBody">{{personalOn}} <ion-icon name="add-circle-outline"></ion-icon></p>
     <swiper-container
       #swiper
-      (slidechange)="onSlideChange($event)"
       [modules]="swiperModules"
       [slidesPerView]="1.5"
       [initialSlide]="0"
@@ -103,7 +102,6 @@
     <p class="titleCardsBody">{{programas}}</p>
     <swiper-container
       #swiper
-      (slidechange)="onSlideChange($event)"
       [modules]="swiperModules"
       [slidesPerView]="1.5"
       [initialSlide]="0"
@@ -139,7 +137,6 @@
     <p class="titleCardsBody">{{contents}}</p>
     <swiper-container
       #swiper
-      (slidechange)="onSlideChange($event)"
       [modules]="swiperModules"
       [slidesPerView]="1.5"
       [initialSlide]="0"
