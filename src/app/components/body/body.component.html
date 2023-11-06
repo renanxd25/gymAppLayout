@@ -1,0 +1,102 @@
+<ion-content [fullscreen]="true" color="secondary">
+  <div>
+    <p class="titleCardsBody">{{personalOn}} <ion-icon name="add-circle-outline"></ion-icon></p>
+    <swiper-container
+      #swiper
+      [modules]="swiperModules"
+      [slidesPerView]="1.5"
+      [initialSlide]="0"
+      [centeredSlides]="true"
+      [spaceBetween]="12">
+
+      <!-- effect="flip" -->
+      <swiper-slide>
+        <ion-slide>
+          <ion-card class="custom-cardtest">
+            <ion-row class="ion-justify-content-center row-card">
+              <ion-buttons>
+                <ion-button>
+                  <ion-icon class="icon-add" name="add-circle-outline"></ion-icon>
+                    <p class="textoAdd">Novo <br>Treino</p>
+                </ion-button>
+              </ion-buttons>
+            </ion-row>
+          </ion-card>
+        </ion-slide>
+      </swiper-slide>
+
+      <swiper-slide>
+        <ion-slide>
+          <ion-card class="card-yoga">
+            <ion-card-header>
+              <ion-card-title class="yogaTitle">{{yoga}}</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+      </swiper-slide>
+    </swiper-container>
+  </div>
+
+  <div>
+    <p class="titleCardsBody">{{programas}}</p>
+    <swiper-container
+      #swiper
+      [modules]="swiperModules"
+      [slidesPerView]="1.5"
+      [initialSlide]="0"
+      [centeredSlides]="true"
+      [spaceBetween]="12">
+      <!-- effect="flip" -->
+      <swiper-slide>
+        <ion-slide>
+          <ion-card class="custom-cardtest" id="background-card2">
+            <ion-card-content class="contentCardBody">
+             <p>{{keepTraining}}</p>
+            </ion-card-content>
+            <ion-card-header class="headerCardBody">
+              <ion-card-title>{{levatamento}}</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+      </swiper-slide>
+
+      <swiper-slide>
+        <ion-slide>
+          <ion-card class="card-yoga">
+            <ion-card-header>
+              <ion-card-title class="yogaTitle">{{yoga}}</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-slide>
+      </swiper-slide>
+    </swiper-container>
+  </div>
+
+  <div>
+    <p class="titleCardsBody">{{contents}}</p>
+    <swiper-container
+      #swiper
+      [modules]="swiperModules"
+      [slidesPerView]="1.5"
+      [initialSlide]="0"
+      [centeredSlides]="true"
+      [spaceBetween]="12">
+      <!-- effect="flip" -->
+      <swiper-slide>
+        <ion-slide>
+          <ion-card class="card-botom">
+            <ion-buttons class="button-conteudo">
+            </ion-buttons>
+          </ion-card>
+        </ion-slide>
+      </swiper-slide>
+
+      <swiper-slide>
+        <ion-slide>
+          <ion-card class="card-botom">
+          </ion-card>
+        </ion-slide>
+      </swiper-slide>
+    </swiper-container>
+  </div>
+</ion-content>
